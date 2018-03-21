@@ -13,7 +13,7 @@ public class GreetingController {
 
     @RequestMapping("/requestRestock")
     public String response(@RequestParam(value="id") String id) {
-        System.out.println("Incoming request");
+        System.out.println("Request received from machine " + id);
         return "Operator has been sent to " + id;
     }
 }
